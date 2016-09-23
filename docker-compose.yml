@@ -1,0 +1,16 @@
+version: '2'
+services:
+
+  server:
+    build: .
+    links:
+      - mongo
+    environment:
+      - MONGO_SERVER=mongo
+    ports:
+      - "8181"
+
+  mongo:
+    image: daocloud.io/library/mongo
+    ports:
+      - "27017:27017"
