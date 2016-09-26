@@ -1,5 +1,5 @@
 server:
-  image: minsheng/bookstore
+  image: 182.140.210.216/minsheng/bookstore
   links:
     - mongo
   environment:
