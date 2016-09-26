@@ -1,5 +1,5 @@
 server:
-  image: 182.140.210.216/minsheng/bookstore
+  image: "182.140.210.216/minsheng/bookstore:${BUILD_NUMBER}"
   links:
     - mongo
   environment:
