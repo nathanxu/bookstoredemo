@@ -29,8 +29,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/json'}));
 
-app.get("/", (req, res) => res.json({message: "Welcome to our Bookstore!"}));
-
 app.route("/book")
 	.get(book.getBooks)
 	.post(book.postBook);
@@ -39,6 +37,7 @@ app.route("/book/:id")
 	.delete(book.deleteBook)
 	.put(book.updateBook);
 
+app.use(express.static('html'));
 
 app.listen(port);
 console.log("Listening on port " + port);
