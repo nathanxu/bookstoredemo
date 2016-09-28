@@ -14,7 +14,7 @@ let options = {
 
 // db connection
 // url = process.env.MONGODB_URL
-url = 'mongodb://mongo:27017"
+var url = "mongodb://mongo:27017";
 console.log(url);
 mongoose.connect(url, options);
 let db = mongoose.connection;
