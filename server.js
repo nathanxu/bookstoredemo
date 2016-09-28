@@ -13,7 +13,9 @@ let options = {
 };
 
 // db connection
-mongoose.connect(config.DBHost, options);
+url = process.env.MONGODB_URL
+console.log(url);
+mongoose.connect(url, options);
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 

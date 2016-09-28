@@ -3,7 +3,7 @@ server:
   links:
     - mongo
   environment:
-    - MONGO_SERVER=mongo
+    - MONGODB_URL_=mongodb://mongo:27017
   ports:
     - "8181:8181"
 
