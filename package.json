@@ -28,5 +28,5 @@
     "mocha-sonar-reporter": {
       "classname": "./test/book.js"
     }
-  },
+  }
 }
