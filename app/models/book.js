@@ -1,3 +1,5 @@
+"use strict";
+
 let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
@@ -17,7 +19,7 @@ let BookSchema = new Schema(
 
 // Sets the createdAt parameter equal to the current time
 BookSchema.pre('save', next => {
-  now = new Date();
+  let now = new Date();
   if(!this.createdAt) {
     this.createdAt = now;
   }
