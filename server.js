@@ -13,9 +13,7 @@ let options = {
 };
 
 // db connection
-// url = process.env.MONGODB_URL
-var url = "mongodb://bookstore_mongo_1:27017";
-mongoose.connect(url, options);
+mongoose.connect(config.DBHost, options);
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
