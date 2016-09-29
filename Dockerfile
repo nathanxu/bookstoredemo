@@ -11,4 +11,4 @@ RUN npm install -g cnpm --registry=https://registry.npm.taobao.org \
 
 EXPOSE 8181
 
-CMD sh run.sh
+CMD node server.js
