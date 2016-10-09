@@ -11,7 +11,7 @@ ${SERVER}         localhost:8181
 ${BROWSER}        Firefox
 ${DELAY}          0
 ${VALID USER}     demo
-${VALID PASSWORD}    aaabbb
+${VALID PASSWORD}    bbbaaa
 ${LOGIN URL}      http://${SERVER}/
 ${WELCOME URL}    http://${SERVER}/welcome.html
 ${ERROR URL}      http://${SERVER}/error.html
