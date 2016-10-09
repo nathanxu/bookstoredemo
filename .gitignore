@@ -36,3 +36,4 @@ config/runtime.yaml
 
 mochawesome-reports/
 .DS_Store
+build/
