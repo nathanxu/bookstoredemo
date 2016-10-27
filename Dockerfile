@@ -3,7 +3,9 @@ FROM  index.tenxcloud.com/tenxcloud/nodejs
 RUN mkdir /src
 COPY app /src/app
 COPY html /src/html
-COPY config test server.js package.json run.sh /src/
+COPY config /src/config
+COPY test /src/test
+COPY server.js package.json run.sh /src/
 
 WORKDIR /src
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org \
