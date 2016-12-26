@@ -7,7 +7,7 @@ Documentation     A resource file with reusable keywords and variables.
 Library           Selenium2Library
 
 *** Variables ***
-${SERVER}         bookstore1_server_1:8181
+${SERVER}         182.140.210.213:7373
 ${BROWSER}        phantomjs
 ${DELAY}          0
 ${VALID USER}     demo
