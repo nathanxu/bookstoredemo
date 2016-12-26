@@ -8,8 +8,7 @@ COPY test /src/test
 COPY server.js package.json run.sh /src/
 
 WORKDIR /src
-RUN npm install -g cnpm --registry=https://registry.npm.taobao.org \
-	&& cnpm install
+ADD node_modules /src
 
 EXPOSE 8181
 
