@@ -2,7 +2,7 @@ server:
   labels:
     io.rancher.container.pull_image: always
   tty: true
-  image: 182.140.210.216/wbdemo/bookstore:${BUILD_NUMBER}
+  image: registry.wise2c.com/wbdemo/bookstore:${BUILD_NUMBER}
   stdin_open: true
   ports:
     - "7373:8181"
