@@ -7,4 +7,4 @@ server:
   ports:
     - "7373:8181"
   environment:
-    - MONGODB_URL_=mongodb://mongo:27017
+    - MONGODB_URL_=mongo://mongo:27017
